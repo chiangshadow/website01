@@ -1,0 +1,91 @@
+#mainWrap{
+    width: 100%;
+}
+#centerWrap, #leftWrap
+{
+    float:left;
+}
+#rightWrap
+{
+    float:right;
+}
+#leftWrap, #rightWrap
+{
+    position: relative;
+    width: 15%;
+}
+#centerWrap, #top-menu
+{
+    width: 70%;
+}
+#centerWrap
+{
+    position: relative;
+}
+
+.divCarouselBg
+{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div img.imgCarousel
+{
+    margin: auto;
+    display: block;
+}
+
+.dropdown-menu
+{
+    display: block;
+}
+
+
+.header
+{
+    width: 100%;
+    position: relative;
+}
+
+#top-menu
+{
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    /*        left: 0;
+            right: 0;*/
+    top: 0;       
+}
+
+#top-menu li {
+    float: left;
+}
+
+#top-menu a {
+    display: block;
+    padding: 5px 25px 7px 25px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    border-bottom: 3px solid white;
+    color: #aaa;
+    text-decoration: none;   
+    opacity : 0.4;
+}
+
+#top-menu li
+{
+    margin-left: 5px;
+}
+
+#top-menu a:hover {
+    color: #000;
+}
+
+#top-menu li.active a {
+    /*border-bottom: 3px solid #333;*/
+    opacity : 1;
+    color: #333;
+}

@@ -1,0 +1,9 @@
+<ul id="top-menu">
+    <%  // nav-pills nav-stacked
+    for(var i=0; i<models.length; i++){
+        %>
+        <li data-id='<%=models[i].id%>'><a class='list-cmd' data-action='click-type' href='#<%=models[i].id%>' onclick="void(0);return false;" style="border-bottom-color: <%=('#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6))%>"><%=(models[i].title)%></a></li>
+        <%     
+        }
+        %>
+</ul>

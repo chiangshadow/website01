@@ -1,0 +1,5 @@
+JSON:
+http://codebeautify.org/jsonviewer#
+
+Colors:
+http://www.w3schools.com/tags/ref_colorpicker.asp

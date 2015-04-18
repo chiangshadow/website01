@@ -1,0 +1,76 @@
+<% 
+for(var i=0; i<models.length; i++){
+    %>
+    <section id="<%=models[i].id%>" class="carousel slide" data-ride="carousel" name="<%=models[i].id%>" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <% 
+            for(var j=0; j<models[i].contents.length; j++){
+                %>
+                <li data-target="#<%=models[i].id%>" data-slide-to="<%=j%>" <%=j===0?'class="active"':''%> <%=models[i].contents.length===1?'style="display:none"':''%>></li>
+                <%                        
+                }
+                %>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <% 
+            for(var j=0; j<models[i].contents.length; j++){
+                %>
+                <div class="item<%=j===0?' active':''%>">
+                    <img class="imgCarousel" src="./data/images/<%=models[i].contentbgs[j]%>" alt="Chania">
+                    <div class="divCarouselBg"></div>
+                    <div class="carousel-caption">
+                        <h3><%=models[i].subtitles[j]%></h3>
+                        <p><%=models[i].contents[j]%></p>
+                    </div>
+                </div>
+                <%                        
+                }
+                %>
+        </div>
+    </section>
+
+    <% if(i===1){%>
+    <section id="1" class="carousel slide" data-ride="carousel" name="contact">
+        <ol class="carousel-indicators">
+
+            <li data-target="#1" data-slide-to="0" class="active" style="display:none"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="imgCarousel" src="./data/images/img_flower2.jpg" alt="Chania">
+                <div class="divCarouselBg"></div>
+                <div class="carousel-caption">
+                    <h3>test</h3>
+                    <p>test test test</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <% }%>
+    <% if(i===0){%>
+    <section id="2" class="carousel slide" data-ride="carousel" name="contact">
+        <ol class="carousel-indicators">
+
+            <li data-target="#2" data-slide-to="0" class="active" style="display:none"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="imgCarousel" src="./data/images/img_flower2.jpg" alt="Chania">
+                <div class="divCarouselBg"></div>
+                <div class="carousel-caption">
+                    <h3>test</h3>
+                    <p>test test test</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <% }%>
+
+    <%                        
+    }
+    %>

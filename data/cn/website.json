@@ -1,0 +1,1 @@
+[{"id":"main","title":"首頁","tbcolor":"#0066FF","subtitles":["首頁01","首頁02"],"contents":["首頁 內容01","首頁 內容02"],"contentbgs":["mainContent01.jpg","mainContent02.jpg"],"seletedCnt":0,"backgroudimg":"main.jpg"},{"id":"contact","title":"聯繫我們","tbcolor":"#FF3300","subtitles":["聯繫我們"],"contents":["聯繫我們 內容"],"contentbgs":["contactContent.jpg"],"seletedCnt":0,"backgroudimg":"contact.jpg"}]

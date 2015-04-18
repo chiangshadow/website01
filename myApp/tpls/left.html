@@ -1,0 +1,15 @@
+<!--<nav class='navbar navbar-default' role='navigation'>-->
+<div id="nav-bar-wrapper">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <%  // nav-pills nav-stacked
+        for(var i=0; i<models.length; i++){
+            %>
+            <li data-id='<%=models[i].id%>'>
+                <a class='list-cmd' data-action='click-type' href='#<%=lang%>/<%=models[i].id%>'onclick="void(0);return false;"><%=(models[i].title)%></a>
+            </li>
+            <%
+            }
+            %>
+    </ul>
+</div>
+<!--</nav>-->
